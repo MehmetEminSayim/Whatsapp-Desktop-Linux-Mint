@@ -1,0 +1,30 @@
+{
+  "name": "wp-dev",
+  "version": "1.0.0",
+  "description": "Electron ile WhatsApp Web masaüstü uygulaması",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux"
+  },
+  "author": {
+    "name": "Mehmet Emin Sayım",
+    "email": "mehmeteminsayim@hotmail.com"
+  },
+  "license": "ISC",
+  "keywords": [],
+  "homepage": "https://github.com/MehmetEminSayim/Whatsapp-Desktop-Linux-Mint",
+  "devDependencies": {
+    "electron": "^36.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.wpdev.desktop",
+    "productName": "WhatsApp Desktop",
+    "linux": {
+      "target": "deb",
+      "icon": "assets/wpicon.png",
+      "category": "Utility"
+    }
+  }
+}
